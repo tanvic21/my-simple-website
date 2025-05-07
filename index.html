@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cozy Corner Cafe</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #5c3d2e;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .hero {
+    background-image: url("cafe-background.jpg");
+    background-size: cover; /* Might crop if aspect ratios don't match */
+    background-repeat: no-repeat;
+    background-position: center; /* Try different positions like 'top center', 'bottom center', 'left center', 'right center' */
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #a0785a;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .menu-section {
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .menu-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .menu-item h3 {
+            margin-top: 0;
+            color: #5c3d2e;
+        }
+
+        .price {
+            color: #a0785a;
+            font-weight: bold;
+        }
+
+        .about-section, .contact-section {
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: sticky; /* Or fixed, depending on desired behavior */
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Cozy Corner Cafe</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Fresh Coffee & Delicious Treats</h2>
+                <p>Your neighborhood spot for the perfect brew and delightful bites.</p>
+                <a href="#menu" class="button">View Our Menu</a>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <h3>Espresso</h3>
+                    <p>Rich and bold shot of espresso.</p>
+                    <span class="price">$3.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Cappuccino</h3>
+                    <p>Espresso with steamed milk and foamed milk.</p>
+                    <span class="price">$4.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Latte</h3>
+                    <p>Espresso with steamed milk.</p>
+                    <span class="price">$4.00</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Americano</h3>
+                    <p>Espresso diluted with hot water.</p>
+                    <span class="price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Croissant</h3>
+                    <p>Flaky and buttery pastry.</p>
+                    <span class="price">$3.50</span>
+                </div>
+                <div class="menu-item">
+                    <h3>Muffin</h3>
+                    <p>Delicious and moist muffin (various flavors).</p>
+                    <span class="price">$3.00</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Us</h2>
+            <p>Welcome to The Cozy Corner Cafe! We are passionate about serving high-quality coffee and delicious treats in a warm and inviting atmosphere. Our beans are ethically sourced, and our pastries are baked fresh daily. Come and experience the perfect blend of comfort and taste.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Visit us at: 123 Main Street, Anytown, CA 91234</p>
+            <p>Call us at: (555) 123-4567</p>
+            <p>Email us at: info@cozycornercafe.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 The Cozy Corner Cafe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
